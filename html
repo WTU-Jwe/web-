@@ -8,7 +8,6 @@
 
         <!-- Load external CSS styles -->
         <link rel="stylesheet" href="styles.css">
-
     </head>
     <style> p {background-color : white }
         a:link, a:visited {
@@ -21,29 +20,54 @@
         }
 
         a:hover, a:active {
-        background-color: yellow;
+        background-color: red;
         }
-    
+
+        table,th,td{
+            border:1px solid black;
+        }
     </style>
+
     <body style="background-color : white">
 
-        <h1 style="background-color:hsla(0, 0%, 0%, 0);">My yjwj</h1>
+        <h1 style="background-color:hsla(0, 0%, 0%, 0);" title="yjwj">My yjwj</h1>
         
         <a href="https://chatglm.cn/main/alltoolsdetail">chatglm</a><br>
         <a href="https://github.com/dashboard">github</a><br>
         
-        <a href="https://www.yjwujian.cn/index.html" target="_blank" title = "永劫无间官方网站">  <img src="https://ts1.cn.mm.bing.net/th/id/R-C.ee57353834b8466a68c5bbb05842e581?rik=S2QC3D%2bCiBX2KA&riu=http%3a%2f%2fpic.bizhi360.com%2fbbpic%2f22%2f11622.jpg&ehk=u1mzcvuRvZrssRO9Lc%2bnuRdTc6aEtvPRqjRKcxL2XnM%3d&risl=&pid=ImgRaw&r=0" alt="HTML tutorial" style="width:192px;height:108px;"></a>
+        <a href="https://www.yjwujian.cn/index.html" target="_blank" title = "永劫无间官方网站">  <img src="https://ts1.cn.mm.bing.net/th/id/R-C.ee57353834b8466a68c5bbb05842e581?rik=S2QC3D%2bCiBX2KA&riu=http%3a%2f%2fpic.bizhi360.com%2fbbpic%2f22%2f11622.jpg&ehk=u1mzcvuRvZrssRO9Lc%2bnuRdTc6aEtvPRqjRKcxL2XnM%3d&risl=&pid=ImgRaw&r=0" alt="HTML tutorial" style="width:960px;height:540px;float:right;"></a>
 
-    <p style="color: red ; border : 10px  solid blue" >
-        永劫无间官方网站
-        
+        <img src="workplace.jpg" alt="workplace" usemap="#mymap" style="width:400px;height:379px;">
+        <map name="mymap">
+            <area shape="circle" coords="337,300,44" href="coffee.htm" onclick="clickfunction" > 
+    <p style="background-image: url('https://bing.oneneko.com/image/NLNorway_EN-AU4158829752_1920x1080.jpg');">
+        You can specify background images<br>
+        for any visible HTML element.<br>
+        In this example, the background image<br>
+        is specified for a p element.<br>
+        By default, the background-image<br>
+        will repeat itself in the direction(s)<br>
+        where it is smaller than the element<br>
+        where it is specified. (Try resizing the<br>
+        browser window to see how the<br>
+        background image behaves.
     </p>
-    
-    <p style="color :red"title="I'm a tooltip">Mouse over this picture, to arrive the yjwj.
-    </p>
+        <table style="width:100%">
+        <tr>
+            <td>Emil</td>
+            <td>Tobias</td>
+            <td>Linus</td>
+        </tr>
+        <tr>
+            <td>16</td>
+            <td>14</td>
+            <td>10</td>
+        </tr>
+      </table>
 
         <!-- Load external JavaScript -->
-        <script src="scripts.js"></script>
+        <script src="scripts.js"> function clickfunction(){
+                alert("you click the coffee~");</script>
     
     </body>
 
