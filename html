@@ -1,74 +1,170 @@
 <!doctype html>
 
 <html>
-    <head>
-        <meta charset="utf-8">
-        
-        <title>永劫无间官网</title>
 
-        <!-- Load external CSS styles -->
-        <link rel="stylesheet" href="styles.css">
-    </head>
-    <style> p {background-color : white }
-        a:link, a:visited {
+<head>
+    <meta charset="utf-8">
+    <title>永劫无间官网</title>
+    <!-- Load external CSS styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    p {
+        background-color: rgba(82, 217, 241, 0)
+    }
+
+    header {
+        background-color: #58b4dc;
+        padding: 30px;
+        text-align: center;
+        font-size: 30px;
+        color: aliceblue;
+    }
+
+    nav {
+        background-color: #3d7e9a;
+        width: 30%;
+        height: 300px;
+        padding: 20px;
+        color: aliceblue;
+        float: left;
+    }
+
+    article {
+        background-color: aqua;
+        width: 70%;
+        height: 300px;
+        float: left;
+        padding: 10px;
+    }
+    footer{
+        background-color: #58b4dc;
+        padding: 20px;
+        text-align: center;
+        font-size: 30px;
+        color: rgb(186, 173, 173);
+    }
+    a:link,
+    a:visited {
         background-color: white;
         color: red;
         padding: 1px 2px;
         text-align: center;
         text-decoration: none;
         display: inline-block;
-        }
+    }
 
-        a:hover, a:active {
-        background-color: red;
-        }
+    a:hover,
+    a:active {
+        background-color: rgb(94, 204, 226);
+    }
 
-        table,th,td{
-            border:1px solid black;
-        }
-    </style>
+    table,
+    th,
+    td {
+        border: 1px solid black;
+    }
+</style>
 
-    <body style="background-color : white">
+<body style="background-color : white">
 
-        <h1 style="background-color:hsla(0, 0%, 0%, 0);" title="yjwj">My yjwj</h1>
-        
-        <a href="https://chatglm.cn/main/alltoolsdetail">chatglm</a><br>
-        <a href="https://github.com/dashboard">github</a><br>
-        
-        <a href="https://www.yjwujian.cn/index.html" target="_blank" title = "永劫无间官方网站">  <img src="https://ts1.cn.mm.bing.net/th/id/R-C.ee57353834b8466a68c5bbb05842e581?rik=S2QC3D%2bCiBX2KA&riu=http%3a%2f%2fpic.bizhi360.com%2fbbpic%2f22%2f11622.jpg&ehk=u1mzcvuRvZrssRO9Lc%2bnuRdTc6aEtvPRqjRKcxL2XnM%3d&risl=&pid=ImgRaw&r=0" alt="HTML tutorial" style="width:960px;height:540px;float:right;"></a>
+    <h1 id="myHeader" title="yjwj">My yjwj</h1>
+    <button onclick="displayResult()">Change the head</button>
+    <br>
+    <a href="https://chatglm.cn/main/alltoolsdetail">chatglm</a><br>
+    <a href="https://github.com/dashboard">github</a><br>
 
-        <img src="workplace.jpg" alt="workplace" usemap="#mymap" style="width:400px;height:379px;">
-        <map name="mymap">
-            <area shape="circle" coords="337,300,44" href="coffee.htm" onclick="clickfunction" > 
-    <p style="background-image: url('https://bing.oneneko.com/image/NLNorway_EN-AU4158829752_1920x1080.jpg');">
-        You can specify background images<br>
-        for any visible HTML element.<br>
-        In this example, the background image<br>
-        is specified for a p element.<br>
-        By default, the background-image<br>
-        will repeat itself in the direction(s)<br>
-        where it is smaller than the element<br>
-        where it is specified. (Try resizing the<br>
-        browser window to see how the<br>
-        background image behaves.
-    </p>
+    <a href="https://www.yjwujian.cn/index.html" target="_blank" title="永劫无间官方网站"> <img
+            src="https://ts1.cn.mm.bing.net/th/id/R-C.ee57353834b8466a68c5bbb05842e581?rik=S2QC3D%2bCiBX2KA&riu=http%3a%2f%2fpic.bizhi360.com%2fbbpic%2f22%2f11622.jpg&ehk=u1mzcvuRvZrssRO9Lc%2bnuRdTc6aEtvPRqjRKcxL2XnM%3d&risl=&pid=ImgRaw&r=0"
+            alt="HTML tutorial" style="width:480px;height:270px;float:right;">
+    </a>
+
+    <img src="workplace.jpg" alt="workplace" usemap="#mymap" style="width:400px;height:379px;">
+    <map name="mymap">
+        <area shape="circle" coords="337,300,44" href="coffee.htm" onclick="clickfunction">
+        <p
+            style="color:red;background-image: url('https://bing.oneneko.com/image/NLNorway_EN-AU4158829752_1920x1080.jpg');">
+            You can specify background images<br>
+            for any visible HTML element.<br>
+            In this example, the background image<br>
+            is specified for a p element.<br>
+            By default, the background-image<br>
+            will repeat itself in the direction(s)<br>
+            where it is smaller than the element<br>
+            where it is specified. (Try resizing the<br>
+            browser window to see how the<br>
+            background image behaves.
+        </p>
+        <iframe src="https://bing.oneneko.com/image/NLNorway_EN-AU4158829752_1920x1080.jpg" name="scenery"
+            height="1000px" width="100%">
+        </iframe>
+        <p><a href="https://chatglm.cn/main/alltoolsdetail" target="scenery">chatglm</a></p>
         <table style="width:100%">
-        <tr>
-            <td>Emil</td>
-            <td>Tobias</td>
-            <td>Linus</td>
-        </tr>
-        <tr>
-            <td>16</td>
-            <td>14</td>
-            <td>10</td>
-        </tr>
-      </table>
+            <tr>
+                <th style="width:40%">first
+                </th>
+                <th>second
+                </th>
+                <th>third
+                </th>
+                </th>
+            <tr>
+                <td>Emil</td>
+                <td>Tobias</td>
+                <td>Linus</td>
+            </tr>
+            <tr>
+                <td>16</td>
+                <td>14</td>
+                <td>10</td>
+            </tr>
+        </table>
 
         <!-- Load external JavaScript -->
-        <script src="scripts.js"> function clickfunction(){
-                alert("you click the coffee~");</script>
-    
-    </body>
+        <script src="scripts.js">
+            function clickfunction() {
+                alert("you click the coffee~");
+            }
+        </script>
+        <script>
+            function displayResult() {
+                document.getElementById("myHeader").innerHTML = "Welcome to yjwj!";
+            }
+        </script>
+        <header>
+            Resume
+        </header>
+        <section>
+            <nav>
+                <ul>
+                    <li>基本信息</li>
+                    <li>专业技能</li>
+                    <li>项目经历</li>
+                    <li>实践经历</li>
+                    <li>开源项目</li>
+                    <li>获奖证书</li>
+                </ul>
+            </nav>
+            <article>
+                <h1 style="text-align: center;">个人简介</h1>
+                <P> In this example, we have created a header, two columns/boxes and a footer. On smaller screens, the
+                    columns will stack on top of each other.</p>
+                <p> Resize the browser window to see the responsive effect (you will learn more about this in our next
+                    chapter - HTML Responsive.)</P>
+            </article>
+        </section>
+        <footer>
+            Welcome to arrive~
+        </footer>
+
+</body>
 
 </html>
